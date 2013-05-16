@@ -2,28 +2,28 @@
 
 
 
-		int distX;
-		int distY;
-		int targetX;
-		int targetY;
-		int x;
-		int y;
-		float easing=.1;
-		
-		void setup() {
-  		size(500, 500);
-  		x=width/2;
- 			y=height/2;
-		}
+	int distX;
+	int distY;
+	int targetX;
+	int targetY;
+	int x;
+	int y;
+	float easing=.1;
+	
+	void setup() {
+  	size(500, 500);
+ 	x=width/2;
+ 	y=height/2;
+	}
 
-		void draw() {
-  		background(0);
-  		fill(189,98,250);
-  		ellipse(x, y, 50,50);
-  		targetX=mouseX;
-  		targetY=mouseY;
-  		distX=targetX-x;
-  		distY=targetY-y;
-  		x+=distX*easing;
-  		y+=distY*easing;
-		}
+	void draw() {
+  	background(0);
+  	fill(189,98,250);
+  	ellipse(x, y, 50,50);
+  	targetX=mouseX;
+  	targetY=mouseY;
+  	distX=targetX-x;
+  	distY=targetY-y;
+  	x+=distX*easing;
+  	y+=distY*easing;
+	}
